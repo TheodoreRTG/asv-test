@@ -21,7 +21,7 @@
     // Customizable commands for building, installing, and
     // uninstalling the project. See asv.conf.json documentation.
     //
-     "install_command": [ "in-dir=/root/asv-test/ python3 -m pip install --no-binary pycocotools pycocotools --no-cache", "in-dir=/root/asv-test/ python3 -m pip install absl-py pillow --no-cache", "in-dir=/root/asv-test python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ numpy==1.19.5 --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ matplotlib --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ tensorflow-io-gcs-filesystem==0.24.0 h5py==3.1.0 --no-cache"],
+    "install_command": [ "in-dir=/root/asv-test/ python3 -m pip install ck --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --no-binary pycocotools pycocotools --no-cache", "in-dir=/root/asv-test/ python3 -m pip install absl-py pillow --no-cache", "in-dir=/root/asv-test python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ numpy --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ matplotlib --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ tensorflow-io-gcs-filesystem==0.24.0 h5py==3.1.0 --no-cache"],
      "uninstall_command": ["return-code=any python -mpip uninstall -y tensorflow-aarch64", "return-code=any python -mpip uninstall -y pycocotools", "return-code=any python -mpip uninstall -y absl-py pillow", "return-code=any python -mpip uninstall -y numpy==1.19.5", "return-code=any python -mpip uninstall -y matplotlib", "return-code=any python -mpip uninstall -y tensorflow-io-gcs-filesystem==0.24.0 h5py==3.1.0"],
      "build_command": ["PIP_NO_BUILD_ISOLATION=false in-dir=/root/asv-test/ python3 -m pip install -v tensorflow-aarch64 --no-cache"],
 
@@ -101,13 +101,13 @@
 	    "cython": [""],
 	    "google": [""],
             "protobuf": [""],
-	    "tensorflow-aarch64": ["2.9.1", "2.9.0", "2.8.2", "2.7.0"],
+	    "tensorflow-aarch64": ["2.9.1", "2.8.2"],
 //	    "pycocotools": [""],
 //	    "absl-py": [""],
 	    "pillow": [""],
 //            "numpy": ["1.19.5"],
 //	    "matplotlib": [""],
-	    "ck": [""],
+//	    "ck": [""],
 	    "scikit-build": [""]
 	      //       "pip+emcee": [""]   // emcee is only available for install with pip.
          },

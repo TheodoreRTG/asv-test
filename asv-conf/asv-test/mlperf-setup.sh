@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 #apt-get -y update
 #apt-get -y install --reinstall build-essential
@@ -7,6 +7,9 @@
 #rm -rf tf_venv
 rm -rf ~/src
 umount -f -l /mnt/datasets
+rm -rf /mnt/datasets
+alias python=python3
+export python
 #mkdir tf_venv
 #cd tf_venv
 #python3 -m venv .
@@ -32,9 +35,9 @@ git checkout r1.1
 git cherry-pick -n 215c057fc6690a47f3f66c72c076a8f73d66cb12
 git submodule update --init --recursive
 cd loadgen
-python setup.py develop
+python3 setup.py develop
 cd ../vision/classification_and_detection/
-python setup.py develop
+python3 setup.py develop
 
 mkdir /mnt/datasets
 mount -t nfs 10.40.96.10:/mnt/nvme /mnt/datasets
