@@ -21,9 +21,10 @@
     // Customizable commands for building, installing, and
     // uninstalling the project. See asv.conf.json documentation.
     //
-    "install_command": [ "in-dir=/root/asv-test/ python3 -m pip install ck --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --no-binary pycocotools pycocotools --no-cache", "in-dir=/root/asv-test/ python3 -m pip install absl-py pillow --no-cache", "in-dir=/root/asv-test python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ numpy --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ matplotlib --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ tensorflow-io-gcs-filesystem==0.24.0 h5py==3.1.0 --no-cache"],
+     "install_command": [ "in-dir=/root/asv-test/ python3 -m pip install ck --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --no-binary pycocotools pycocotools --no-cache", "in-dir=/root/asv-test/ python3 -m pip install absl-py pillow --no-cache", "in-dir=/root/asv-test python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ numpy --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ matplotlib --no-cache", "in-dir=/root/asv-test/ python3 -m pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ tensorflow-io-gcs-filesystem==0.24.0 h5py==3.1.0 --no-cache"],
      "uninstall_command": ["return-code=any python -mpip uninstall -y tensorflow-aarch64", "return-code=any python -mpip uninstall -y pycocotools", "return-code=any python -mpip uninstall -y absl-py pillow", "return-code=any python -mpip uninstall -y numpy==1.19.5", "return-code=any python -mpip uninstall -y matplotlib", "return-code=any python -mpip uninstall -y tensorflow-io-gcs-filesystem==0.24.0 h5py==3.1.0"],
-     "build_command": ["PIP_NO_BUILD_ISOLATION=false in-dir=/root/asv-test/ python3 -m pip install -v tensorflow-aarch64 --no-cache"],
+     //"build_command": ["PIP_NO_BUILD_ISOLATION=false python3 -mpip wheel --no-deps --no-index -w /root/asv-test-cache /root/asv-test"],
+     "build_command": ["PIP_NO_BUILD_ISOLATION=false in-dir=/root/asv-test/asv-conf python3 -m pip install -v tensorflow_aarch64-2.10.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl --no-cache"],
 
     // List of branches to benchmark. If not provided, defaults to "master"
     // (for git) or "default" (for mercurial).
@@ -101,7 +102,7 @@
 	    "cython": [""],
 	    "google": [""],
             "protobuf": [""],
-	    "tensorflow-aarch64": ["2.9.1", "2.8.2"],
+	 //   "tensorflow-aarch64": ["2.9.1", "2.8.2", "2.7.0"],
 //	    "pycocotools": [""],
 //	    "absl-py": [""],
 	    "pillow": [""],
