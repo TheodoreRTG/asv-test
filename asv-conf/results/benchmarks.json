@@ -1,0 +1,23 @@
+{
+    "benchmarks.TensorflowMLPerfSuite.track_QPS_mobilenet": {
+        "code": "class TensorflowMLPerfSuite:\n    def track_QPS_mobilenet(self):\n        import subprocess\n        import re\n        import os\n        m = open('results-mobilenet.txt', 'w')\n        subprocess.run(['/root/asv-test/asv-conf/asv-test/run-mobilenet.sh'], stdout=m)\n        m.close()\n        for i, line in enumerate(open(\"results-mobilenet.txt\")):\n            if 'qps=' in line:\n                result = re.search('qps=(.*?),', line)\n                finresult = result.group(1)\n                os.remove(\"results-mobilenet.txt\")\n                return float(finresult)\n\n    def setup(self):\n        import subprocess\n        subprocess.run(['/root/asv-test/asv-conf/asv-test/mlperf-setup.sh'],  shell=True)\n        pass",
+        "name": "benchmarks.TensorflowMLPerfSuite.track_QPS_mobilenet",
+        "param_names": [],
+        "params": [],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "qps",
+        "version": "91df8cc9a4ba5e2a61e00232b64dc4c58b033168403a2facd1d3c7fb0c890f0a"
+    },
+    "benchmarks.TensorflowMLPerfSuite.track_QPS_resnet50": {
+        "code": "class TensorflowMLPerfSuite:\n    def track_QPS_resnet50(self):\n        import subprocess\n        import re\n        import os\n        r = open('results-resnet50.txt', 'w')\n        subprocess.run(['/root/asv-test/asv-conf/asv-test/run-resnet50.sh'], stdout=r)\n        r.close()\n        for i, line in enumerate(open(\"results-resnet50.txt\")):\n            if 'qps=' in line:\n                result = re.search('qps=(.*?),', line)\n                finresult = result.group(1)\n                os.remove(\"results-resnet50.txt\")\n                return float(finresult)\n\n    def setup(self):\n        import subprocess\n        subprocess.run(['/root/asv-test/asv-conf/asv-test/mlperf-setup.sh'],  shell=True)\n        pass",
+        "name": "benchmarks.TensorflowMLPerfSuite.track_QPS_resnet50",
+        "param_names": [],
+        "params": [],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "qps",
+        "version": "4ceb2ed0e564009a8561b7179adae36a7a97e4c4645e3d1cf769cc77ef91d455"
+    },
+    "version": 2
+}
