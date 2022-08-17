@@ -28,7 +28,7 @@ class TensorflowImageClassification:
         os.environ['batch'] = batch_size
         
     def track_image_classification(model, lib, inter_list, intra_list, batch_size):
-        import test-image_classification_with_tf_hub-itr-setthreads
+        import ../asv-test/test-image_classification_with_tf_hub-itr-setthreads
         model_name = model
         inter_op_threads = inter_list
         intra_op_threads = intra_list
