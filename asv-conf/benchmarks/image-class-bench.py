@@ -28,7 +28,7 @@ class TensorflowImageClassification:
         os.environ['batch'] = batch_size
         
     def track_image_classification(model, lib, inter_list, intra_list, batch_size):
-        import ../asv-test/test-image_classification_with_tf_hub-itr-setthreads
+        from test-image_classification_with_tf_hub-itr-setthreads import load_image
         model_name = model
         inter_op_threads = inter_list
         intra_op_threads = intra_list
@@ -275,7 +275,7 @@ class TensorflowImageClassification:
 
         If you want to check on more image models you can check them out on [tfhub.dev](https://tfhub.dev/s?module-type=image-augmentation,image-classification,image-classification-logits,image-classifier,image-feature-vector,image-generator,image-object-detection,image-others,image-pose-detection,image-segmentation,image-style-transfer,image-super-resolution,image-rnn-agent)
         """
-        os.system("image_classification_with_tf_hub-itr-setthreads.py $model $lib $inter $intra $batch")
+  #      os.system("image_classification_with_tf_hub-itr-setthreads.py $model $lib $inter $intra $batch")
         
-    track_image_classification.params = (["efficientnetv2-s",  "efficientnetv2-m"], ['tp', 'eigen'], "16", "16", ['1', '16', '32'])
+    track_image_classification.params = (["efficientnetv2-s",  "efficientnetv2-m"], ["tp", "eigen"], 16, 16, [1, 16, 32])
     track_QPS_mobilenet.unit = "Inference Time"
