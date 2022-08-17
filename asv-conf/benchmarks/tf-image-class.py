@@ -35,5 +35,5 @@ class TensorflowImageClassification:
         output = subprocess.run(['python3 2image_classification_with_tf_hub-itr-setthreads.py $model $lib $inter $intra $batch'], stdout=r, capture_output=True)
         #r.close()
         return output
-    track_image_classification.params = (["efficientnetv2-s",  "efficientnetv2-m"], ['tp', 'eigen'], "16", "16", ['1', '16', '32'])
+    track_image_classification.params = (["efficientnetv2-s",  "efficientnetv2-m"], ['tp', 'eigen'], 16, 16, [1, 16, 32])
     track_QPS_mobilenet.unit = "Inference Time"
