@@ -21,11 +21,11 @@ class TensorflowImageClassification:
           os.environ['TF_ENABLE_ONEDNN_OPTS'] = "1"
         else:
           os.environ['TF_ENABLE_ONEDNN_OPTS'] = "0"
-        os.environ['model'] = model
-        os.environ['lib'] = lib
-        os.environ['inter'] = inter_list
-        os.environ['intra'] = intra_list
-        os.environ['batch'] = batch_size
+ #       os.environ['model'] = model
+ #       os.environ['lib'] = lib
+ #       os.environ['inter'] = inter_list
+ #       os.environ['intra'] = intra_list
+ #       os.environ['batch'] = batch_size
         
     def track_image_classification(model, lib, inter_list, intra_list, batch_size):
         from test-image_classification_with_tf_hub-itr-setthreads import load_image
