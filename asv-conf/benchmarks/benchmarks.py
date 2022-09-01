@@ -1,43 +1,31 @@
+import subprocess
+import re
+import os
+import sys
+
 class TensorflowMLPerfSuite:
     timeout = 1800
-    def setup(self):
-        import subprocess
-        subprocess.run(['/root/asv-test/asv-conf/asv-test/mlperf-setup.sh'],  shell=True)
+    def setup_cache(self):
         pass
     def track_QPS_resnet50(self):
-        import subprocess
-        import re
-        import os
-        r = open('results-resnet50.txt', 'w')
-        subprocess.run(['/root/asv-test/asv-conf/asv-test/run-resnet50.sh'], stdout=r)
-        r.close()
-        for i, line in enumerate(open("results-resnet50.txt")):
+        out = subprocess.run(['bash /root/asv-test/asv-conf/asv-test/run-resnet50.sh'], shell=True, capture_output=True)
+        sout = out.stdout.decode(sys.stdout.encoding).split('\n')
+        serr = out.stderr.decode(sys.stdout.encoding).split('\n')
+        for i, line in enumerate(sout):
             if 'qps=' in line:
                 result = re.search('qps=(.*?),', line)
                 finresult = result.group(1)
-                os.remove("results-resnet50.txt")
                 return float(finresult)
+        return 1.0
     track_QPS_resnet50.unit = "qps"
     def track_QPS_mobilenet(self):
-        import subprocess
-        import re
-        import os
-        m = open('results-mobilenet.txt', 'w')
-        subprocess.run(['/root/asv-test/asv-conf/asv-test/run-mobilenet.sh'], stdout=m)
-        m.close()
-        for i, line in enumerate(open("results-mobilenet.txt")):
+        out = subprocess.run(['bash /root/asv-test/asv-conf/asv-test/run-mobilenet.sh'], shell=True, capture_output=True)
+        sout = out.stdout.decode(sys.stdout.encoding).split('\n')
+        serr = out.stderr.decode(sys.stdout.encoding).split('\n')
+        for i, line in enumerate(sout):
             if 'qps=' in line:
                 result = re.search('qps=(.*?),', line)
                 finresult = result.group(1)
-                os.remove("results-mobilenet.txt")
                 return float(finresult)
+        return 1.0
     track_QPS_mobilenet.unit = "qps"
-#    def QPS_ssd_resnet34_list(self):
-#        import subprocess
-#        subprocess.run(['/root/asv-test/asv-conf/asv-test/run-ssd-resnet34.sh'], ">>", "results-ssd-resnet-34.txt", shell=True)
-#        for i, line in enumerate(open("results-ssd-resnet34.txt")):
-#            if 'qps=' in line:
-#                result = re.search('qps=(.*),', line)
-#        os.remove("results-ssd-resnet34.txt")
-#        return result
-
