@@ -1,9 +1,0 @@
-{
-    "arch": "aarch64",
-    "cpu": "",
-    "machine": "vim asv.conf.json",
-    "num_cpu": "64",
-    "os": "Linux 5.10.0-11-arm64",
-    "ram": "131382292",
-    "version": 1
-}
