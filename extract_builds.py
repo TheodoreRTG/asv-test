@@ -17,7 +17,7 @@ for id in range(idBegin,idEnd):
         for item in result_list:
             if "git_log.stdout:" in item:
                 hits += 1
-                if hits == 4: idx = curidx
+                if hits == 1: idx = curidx
             curidx += 1
         commitHash = result_list[idx].split(' ')[3].replace("'",'')
         buildUrl = result_list[-4].split(' ')[-1].replace("'",'')
