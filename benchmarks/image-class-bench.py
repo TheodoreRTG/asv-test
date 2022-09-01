@@ -1,6 +1,11 @@
 class TensorflowImageClassification:
     timeout = 1800
-    def setup(model, lib, inter_list, intra_list, batch_size):
+    
+    def track_image_classification(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test/asv-conf/asv-test')
+        import tensorflow as tf
+        from functs import preprocess_image, load_image_from_url, load_image, show_image
         import os
 
         import time
@@ -21,14 +26,8 @@ class TensorflowImageClassification:
           os.environ['TF_ENABLE_ONEDNN_OPTS'] = "1"
         else:
           os.environ['TF_ENABLE_ONEDNN_OPTS'] = "0"
- #       os.environ['model'] = model
- #       os.environ['lib'] = lib
- #       os.environ['inter'] = inter_list
- #       os.environ['intra'] = intra_list
- #       os.environ['batch'] = batch_size
         
-    def track_image_classification(model, lib, inter_list, intra_list, batch_size):
-        from test-image_classification_with_tf_hub-itr-setthreads import load_image
+
         model_name = model
         inter_op_threads = inter_list
         intra_op_threads = intra_list
@@ -250,28 +249,11 @@ class TensorflowImageClassification:
         perf=np.min(inference_times)
         print("Inference time:", perf)
         return perf
-#        with open('output-'+benchname+str(mb)+'.csv', 'a+', newline='') as f:
-#            writer = csv.writer(f)
-#            writer.writerow([model_name, benchname, str(mb), str(inter_op_threads), str(intra_op_threads), str(perf) ])
-#        top_5 = tf.argsort(probabilities, axis=-1, direction="DESCENDING")[0][:5].numpy()
-#        np_classes = np.array(classes)
-
-        # Some models include an additional 'background' class in the predictions, so
-        # we must account for this when reading the class labels.
-        #includes_background_class = probabilities.shape[1] == 1001
-
-        #for i, item in enumerate(top_5):
-        #  class_index = item if includes_background_class else item + 1
-        #  line = f'({i+1}) {class_index:4} - {classes[class_index]}: {probabilities[0][top_5][i]}'
-        #  print(line)
-
-        #show_image(image, '')
-
         """## Learn More
         If you want to learn more and try how to do Transfer Learning with these models you can try this tutorial: [Transfer Learning for Image classification](https://www.tensorflow.org/hub/tutorials/tf2_image_retraining) 
         If you want to check on more image models you can check them out on [tfhub.dev](https://tfhub.dev/s?module-type=image-augmentation,image-classification,image-classification-logits,image-classifier,image-feature-vector,image-generator,image-object-detection,image-others,image-pose-detection,image-segmentation,image-style-transfer,image-super-resolution,image-rnn-agent)
         """
   #      os.system("image_classification_with_tf_hub-itr-setthreads.py $model $lib $inter $intra $batch")
         
-    track_image_classification.params = (["efficientnetv2-s",  "efficientnetv2-m"], ["tp", "eigen"], 16, 16, [1, 16, 32])
-    track_QPS_mobilenet.unit = "Inference Time"
+    track_image_classification.params = (["inception_v3",  "nasnet_mobile"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_image_classification.unit = "Inference Time"
