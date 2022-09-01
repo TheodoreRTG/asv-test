@@ -11,13 +11,14 @@
 
     // The URL or local path of the source code repository for the
     // project being benchmarked
-    "repo": "/home/ubuntu/sources/tensorflow",
+    // SHOULD USE THIS : "repo": "/home/ubuntu/sources/tensorflow",
+    "repo": "http://github.com/tensorflow/tensorflow.git",
     
     // The Python project's subdirectory in your repo.  If missing or
     // the empty string, the project is assumed to be located at the root
     // of the repository.
     //    "repo_subdir": "tensorflow/python/pip_package",
-
+https://github.com/K1504296/asv-test/blob/tf-tests/asv-conf/asv.conf.json
     // Customizable commands for building, installing, and
     // uninstalling the project. See asv.conf.json documentation.
     //
