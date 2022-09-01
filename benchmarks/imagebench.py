@@ -3,7 +3,7 @@ class TensorflowImageClassification:
     
     def track_image_classification(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test/asv-conf/asv-test')
+        sys.path.append('/root/asv-test')
         import tensorflow as tf
         from functs import preprocess_image, load_image_from_url, load_image, show_image
         import os
