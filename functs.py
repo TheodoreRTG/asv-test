@@ -31,7 +31,6 @@ import scipy.misc
 from PIL import Image, ImageDraw, ImageFont
 from six.moves.urllib.request import urlopen
 
-        from functs import 
 #####
 
 def load_image_into_numpy_array(path):
