@@ -29,9 +29,9 @@ class TensorflowObjectDetection:
         inference = run_object_detect_bench(self, model,lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_object_detection_centernet_hourglass104_keypoints_512x512.params = (['CenterNet HourGlass104 Keypoints 512x512'], ['tp', 'eigen'], [16], [16], [1,16,32])
+    track_centernet_hourglass104_keypoints_512x512.params = (['CenterNet HourGlass104 Keypoints 512x512'], ['tp', 'eigen'], [16], [16], [1,16,32])
 
-    track_object_detection_centernet_hourglass104_keypoints_512x512.unit = "Inference Time"
+    track_centernet_hourglass104_keypoints_512x512.unit = "Inference Time"
     
     
     def track_centernet_hourglass104_1024x1024(self, model, lib, inter_list, intra_list, batch_size):
@@ -62,7 +62,7 @@ class TensorflowObjectDetection:
         inference = run_object_detect_bench(self, model,lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_object_detection_centernet_hourglass104_1024x1024.params = (['CenterNet HourGlass104 1024x1024'], ['tp', 'eigen'], [16], [16], [1,16,32])
+    track_centernet_hourglass104_1024x1024.params = (['CenterNet HourGlass104 1024x1024'], ['tp', 'eigen'], [16], [16], [1,16,32])
 
-    track_object_detection_centernet_hourglass104_1024x1024.unit = "Inference Time"
+    track_centernet_hourglass104_1024x1024.unit = "Inference Time"
     
