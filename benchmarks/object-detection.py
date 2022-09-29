@@ -1,7 +1,7 @@
 class TensorflowObjectDetection:
     timeout = 1800
 
-    def track_object_detection_centernet_hourglass104_keypoints_512x512(self, model, lib, inter_list, intra_list, batch_size):
+    def track_centernet_hourglass104_keypoints_512x512(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
 
@@ -34,7 +34,7 @@ class TensorflowObjectDetection:
     track_object_detection_centernet_hourglass104_keypoints_512x512.unit = "Inference Time"
     
     
-    def track_object_detection_centernet_hourglass104_1024x1024(self, model, lib, inter_list, intra_list, batch_size):
+    def track_centernet_hourglass104_1024x1024(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
 
