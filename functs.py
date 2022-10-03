@@ -113,7 +113,7 @@ Note: All these models were trained on the ImageNet dataset
 
 def run_image_bench(self, model, lib, inter_list, intra_list, batch_size):
                 
-        if model == "tp":
+        if lib == "tp":
           os.environ['TF_ENABLE_ONEDNN_OPTS'] = "1"
         else:
           os.environ['TF_ENABLE_ONEDNN_OPTS'] = "0"
@@ -343,7 +343,7 @@ def run_image_bench(self, model, lib, inter_list, intra_list, batch_size):
 
 def run_object_detect_bench(self, model, lib, inter_list, intra_list, batch_size):
 
-        if model == "tp":
+        if lib == "tp":
             os.environ['TF_ENABLE_ONEDNN_OPTS'] = "1"
         else:
             os.environ['TF_ENABLE_ONEDNN_OPTS'] = "0"
@@ -407,8 +407,8 @@ def run_object_detect_bench(self, model, lib, inter_list, intra_list, batch_size
 
 
         IMAGES_FOR_TEST = {
-          'Beach' : 'models/research/object_detection/test_images/image2.jpg',
-          'Dogs' : 'models/research/object_detection/test_images/image1.jpg',
+          'Beach' : '/root/asv-test/models/research/object_detection/test_images/image2.jpg',
+          'Dogs' : '/root/asv-test/models/research/object_detection/test_images/image1.jpg',
           # By Heiko Gorski, Source: https://commons.wikimedia.org/wiki/File:Naxos_Taverna.jpg
           'Naxos Taverna' : 'https://upload.wikimedia.org/wikipedia/commons/6/60/Naxos_Taverna.jpg',
          # Source: https://commons.wikimedia.org/wiki/File:The_Coleoptera_of_the_British_islands_(Plate_125)_(8592917784).jpg
@@ -442,7 +442,7 @@ def run_object_detect_bench(self, model, lib, inter_list, intra_list, batch_size
         from object_detection.utils import visualization_utils as viz_utils
         from object_detection.utils import ops as utils_ops
 
-        PATH_TO_LABELS = './models/research/object_detection/data/mscoco_label_map.pbtxt'
+        PATH_TO_LABELS = '/root/asv-test/models/research/object_detection/data/mscoco_label_map.pbtxt'
         category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
         model_handle = ALL_MODELS[model_display_name]
