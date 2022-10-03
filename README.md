@@ -1,6 +1,9 @@
 # ASV Tensorflow
 
-- Run `extract_builds.py` , there are two arguments which determine the first and last ID to crawl the CI page and save as `commit_list`.
+- Populate your commit_list:
+ 	- To output the latest tensorflow binary and commit number to your commit_list : Run `gen_commit_list.sh`.
+	- To output a range of tensorflow binaries and commit numbers to your commit_list : Run `extract_builds.py` , there are two arguments which determine the first and last ID to crawl the CI page and save as `commit_list`.
+
 - Run `get_commit_list.sh` it will create a `builds/{commit}` directory with all Tensorflow versions.
 - Run `gen_asv_commit_list.sh`, it will create a `asv_commit_list` file with which you can run ASV with `asv run HASHFILE:asv_commit_list`.
 - Make sure to update the submodules to get `inference`, then move to that directory and run:
