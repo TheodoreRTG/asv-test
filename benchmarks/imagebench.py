@@ -55,3 +55,1299 @@ class TensorflowImageClassification:
 
     track_nasnet_mobile.params = (["nasnet_mobile"], ["tp", "eigen"], [16], [16], [1, 16, 32])
     track_nasnet_mobile.unit = "Inference Time"
+
+    def track_efficientnetv2-s(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-s.params = (["efficientnetv2-s"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-s.unit = "Inference Time"
+    
+    def track_efficientnetv2-m(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-m.params = (["efficientnetv2-m"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-m.unit = "Inference Time"  
+     
+    def track_efficientnetv2-l(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-l.params = (["efficientnetv2-l"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-l.unit = "Inference Time"
+       
+    def track_efficientnetv2-s-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-s-21k.params = (["efficientnetv2-s-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-s-21k.unit = "Inference Time"
+       
+    def track_efficientnetv2-m-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-m-21k.params = (["efficientnetv2-m-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-m-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-l-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-l-21k.params = (["efficientnetv2-l-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-l-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-xl-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-xl-21k.params = (["efficientnetv2-xl-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-xl-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b0-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b0-21k.params = (["efficientnetv2-b0-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b0-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b1-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b1-21k.params = (["efficientnetv2-b1-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b1-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b2-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b2-21k.params = (["efficientnetv2-b2-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b2-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b3-21k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b3-21k.params = (["efficientnetv2-b3-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b3-21k.unit = "Inference Time"
+           
+    def track_efficientnetv2-s-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-s-21k-ft1k.params = (["efficientnetv2-s-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-s-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-m-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-m-21k-ft1k.params = (["efficientnetv2-m-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-m-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-l-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-l-21k-ft1k.params = (["efficientnetv2-l-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-l-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-xl-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-xl-21k-ft1k.params = (["efficientnetv2-xl-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-xl-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b0-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b0-21k-ft1k.params = (["efficientnetv2-b0-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b0-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b1-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b1-21k-ft1k.params = (["efficientnetv2-b1-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b1-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b2-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b2-21k-ft1k.params = (["efficientnetv2-b2-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b2-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b3-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b3-21k-ft1k.params = (["efficientnetv2-b3-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b3-21k-ft1k.unit = "Inference Time"
+           
+    def track_efficientnetv2-b0(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b0.params = (["efficientnetv2-b0"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b0.unit = "Inference Time"
+           
+    def track_efficientnetv2-b1(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b1.params = (["efficientnetv2-b1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b1.unit = "Inference Time"
+           
+    def track_efficientnetv2-b2(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b2.params = (["efficientnetv2-b2"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b2.unit = "Inference Time"
+           
+    def track_efficientnetv2-b3(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnetv2-b3.params = (["efficientnetv2-b3"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2-b3.unit = "Inference Time"
+           
+    def track_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b0.params = (["efficientnet_b0"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b0.unit = "Inference Time"
+           
+    def track_efficientnet_b1(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b1.params = (["efficientnet_b1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b1.unit = "Inference Time"
+           
+    def track_efficientnet_b2(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b2.params = (["efficientnet_b2"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b2.unit = "Inference Time"
+           
+    def track_efficientnet_b3(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b3.params = (["efficientnet_b3"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b3.unit = "Inference Time"
+           
+    def track_efficientnet_b4(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b4.params = (["efficientnet_b4"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b4.unit = "Inference Time"
+           
+    def track_efficientnet_b5(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b5.params = (["efficientnet_b5"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b5.unit = "Inference Time"
+           
+    def track_efficientnet_b6(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b6.params = (["efficientnet_b6"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b6.unit = "Inference Time"
+           
+    def track_efficientnet_b7(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_efficientnet_b7.params = (["efficientnet_b7"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnet_b7.unit = "Inference Time"
+           
+    def track_bit_s-r50x1(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_bit_s-r50x1.params = (["bit_s-r50x1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_bit_s-r50x1.unit = "Inference Time"
+           
+    def track_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_inception_resnet_v2.params = (["inception_resnet_v2"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_inception_resnet_v2.unit = "Inference Time"
+           
+    def track_resnet_v1_50(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_resnet_v1_50.params = (["resnet_v1_50"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_resnet_v1_50.unit = "Inference Time"
+           
+    def track_resnet_v1_101(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_resnet_v1_101.params = (["resnet_v1_101"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_resnet_v1_101.unit = "Inference Time"
+           
+    def track_resnet_v1_152(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_resnet_v1_152.params = (["resnet_v1_152"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_resnet_v1_152.unit = "Inference Time"
+           
+    def track_resnet_v2_50(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_resnet_v2_50.params = (["resnet_v2_50"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_resnet_v2_50.unit = "Inference Time"
+           
+    def track_resnet_v2_101(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_resnet_v2_101.params = (["resnet_v2_101"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_resnet_v2_101.unit = "Inference Time"
+           
+    def track_resnet_v2_152(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_resnet_v2_152.params = (["resnet_v2_152"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_resnet_v2_152.unit = "Inference Time"
+           
+    def track_nasnet_large(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_nasnet_large.params = (["nasnet_large"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_nasnet_large.unit = "Inference Time"
+           
+    def track_pnasnet_large(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_pnasnet_large.params = (["pnasnet_large"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_pnasnet_large.unit = "Inference Time"
+           
+    def track_mobilenet_v2_100_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v2_100_224.params = (["mobilenet_v2_100_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v2_100_224.unit = "Inference Time"
+           
+    def track_mobilenet_v2_130_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v2_130_224.params = (["mobilenet_v2_130_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v2_130_224.unit = "Inference Time"
+           
+    def track_mobilenet_v2_140_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v2_140_224.params = (["mobilenet_v2_140_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v2_140_224.unit = "Inference Time"
+           
+    def track_mobilenet_v3_small_100_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v3_small_100_224.params = (["mobilenet_v3_small_100_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v3_small_100_224.unit = "Inference Time"
+           
+    def track_mobilenet_v3_small_075_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v3_small_075_224.params = (["mobilenet_v3_small_075_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v3_small_075_224.unit = "Inference Time"
+           
+    def track_mobilenet_v3_large_100_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v3_large_100_224.params = (["mobilenet_v3_large_100_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v3_large_100_224.unit = "Inference Time"
+           
+    def track_mobilenet_v3_large_075_224(self, model, lib, inter_list, intra_list, batch_size):
+        import sys
+        sys.path.append('/root/asv-test')
+        import tensorflow as tf
+        from functs import run_image_bench
+        import os
+
+        import time
+        import csv
+        ##########
+        import tensorflow as tf
+        import tensorflow_hub as hub
+
+        import requests
+        from PIL import Image
+        from io import BytesIO
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+        import sys
+        
+        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
+        return inference
+
+    track_mobilenet_v3_large_075_224.params = (["mobilenet_v3_large_075_224"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_mobilenet_v3_large_075_224.unit = "Inference Time"
