@@ -56,7 +56,7 @@ class TensorflowImageClassification:
     track_nasnet_mobile.params = (["nasnet_mobile"], ["tp", "eigen"], [16], [16], [1, 16, 32])
     track_nasnet_mobile.unit = "Inference Time"
 
-    def track_efficientnetv2-s(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_s(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -80,10 +80,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-s.params = (["efficientnetv2-s"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-s.unit = "Inference Time"
+    track_efficientnetv2_s.params = (["efficientnetv2-s"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_s.unit = "Inference Time"
     
-    def track_efficientnetv2-m(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_m(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -107,10 +107,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-m.params = (["efficientnetv2-m"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-m.unit = "Inference Time"  
+    track_efficientnetv2_m.params = (["efficientnetv2-m"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_m.unit = "Inference Time"  
      
-    def track_efficientnetv2-l(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_l(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -134,10 +134,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-l.params = (["efficientnetv2-l"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-l.unit = "Inference Time"
+    track_efficientnetv2_l.params = (["efficientnetv2-l"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_l.unit = "Inference Time"
        
-    def track_efficientnetv2-s-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_s_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -161,10 +161,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-s-21k.params = (["efficientnetv2-s-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-s-21k.unit = "Inference Time"
+    track_efficientnetv2_s_21k.params = (["efficientnetv2-s-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_s_21k.unit = "Inference Time"
        
-    def track_efficientnetv2-m-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_m_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -188,10 +188,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-m-21k.params = (["efficientnetv2-m-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-m-21k.unit = "Inference Time"
+    track_efficientnetv2_m_21k.params = (["efficientnetv2-m-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_m_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-l-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_l_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -215,10 +215,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-l-21k.params = (["efficientnetv2-l-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-l-21k.unit = "Inference Time"
+    track_efficientnetv2_l_21k.params = (["efficientnetv2-l-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_l_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-xl-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_xl_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -242,10 +242,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-xl-21k.params = (["efficientnetv2-xl-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-xl-21k.unit = "Inference Time"
+    track_efficientnetv2_xl_21k.params = (["efficientnetv2-xl-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_xl_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-b0-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b0_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -269,10 +269,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b0-21k.params = (["efficientnetv2-b0-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b0-21k.unit = "Inference Time"
+    track_efficientnetv2_b0_21k.params = (["efficientnetv2-b0-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b0_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-b1-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b1_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -296,10 +296,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b1-21k.params = (["efficientnetv2-b1-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b1-21k.unit = "Inference Time"
+    track_efficientnetv2_b1_21k.params = (["efficientnetv2-b1-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b1_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-b2-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b2_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -323,10 +323,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b2-21k.params = (["efficientnetv2-b2-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b2-21k.unit = "Inference Time"
+    track_efficientnetv2_b2_21k.params = (["efficientnetv2-b2-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b2_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-b3-21k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b3_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -350,10 +350,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b3-21k.params = (["efficientnetv2-b3-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b3-21k.unit = "Inference Time"
+    track_efficientnetv2_b3_21k.params = (["efficientnetv2-b3-21k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b3_21k.unit = "Inference Time"
            
-    def track_efficientnetv2-s-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_s_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -377,10 +377,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-s-21k-ft1k.params = (["efficientnetv2-s-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-s-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_s_21k_ft1k.params = (["efficientnetv2-s-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_s_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-m-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_m_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -404,10 +404,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-m-21k-ft1k.params = (["efficientnetv2-m-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-m-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_m_21k_ft1k.params = (["efficientnetv2-m-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_m_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-l-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_l_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -431,10 +431,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-l-21k-ft1k.params = (["efficientnetv2-l-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-l-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_l_21k_ft1k.params = (["efficientnetv2-l-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_l_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-xl-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_xl_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -458,10 +458,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-xl-21k-ft1k.params = (["efficientnetv2-xl-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-xl-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_xl_21k_ft1k.params = (["efficientnetv2-xl-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_xl_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-b0-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b0_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -485,10 +485,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b0-21k-ft1k.params = (["efficientnetv2-b0-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b0-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_b0_21k_ft1k.params = (["efficientnetv2-b0-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b0_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-b1-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b1_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -512,10 +512,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b1-21k-ft1k.params = (["efficientnetv2-b1-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b1-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_b1_21k_ft1k.params = (["efficientnetv2-b1-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b1_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-b2-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b2_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -539,10 +539,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b2-21k-ft1k.params = (["efficientnetv2-b2-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b2-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_b2_21k_ft1k.params = (["efficientnetv2-b2-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b2_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-b3-21k-ft1k(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b3_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -566,10 +566,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b3-21k-ft1k.params = (["efficientnetv2-b3-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b3-21k-ft1k.unit = "Inference Time"
+    track_efficientnetv2_b3_21k_ft1k.params = (["efficientnetv2-b3-21k-ft1k"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b3_21k_ft1k.unit = "Inference Time"
            
-    def track_efficientnetv2-b0(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b0(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -593,10 +593,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b0.params = (["efficientnetv2-b0"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b0.unit = "Inference Time"
+    track_efficientnetv2_b0.params = (["efficientnetv2-b0"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b0.unit = "Inference Time"
            
-    def track_efficientnetv2-b1(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -620,10 +620,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b1.params = (["efficientnetv2-b1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b1.unit = "Inference Time"
+    track_efficientnetv2_b1.params = (["efficientnetv2-b1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b1.unit = "Inference Time"
            
-    def track_efficientnetv2-b2(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -647,10 +647,10 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b2.params = (["efficientnetv2-b2"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b2.unit = "Inference Time"
+    track_efficientnetv2_b2.params = (["efficientnetv2-b2"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b2.unit = "Inference Time"
            
-    def track_efficientnetv2-b3(self, model, lib, inter_list, intra_list, batch_size):
+    def track_efficientnetv2_b3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -674,8 +674,8 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_efficientnetv2-b3.params = (["efficientnetv2-b3"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_efficientnetv2-b3.unit = "Inference Time"
+    track_efficientnetv2_b3.params = (["efficientnetv2-b3"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_efficientnetv2_b3.unit = "Inference Time"
            
     def track_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):
         import sys
@@ -893,7 +893,7 @@ class TensorflowImageClassification:
     track_efficientnet_b7.params = (["efficientnet_b7"], ["tp", "eigen"], [16], [16], [1, 16, 32])
     track_efficientnet_b7.unit = "Inference Time"
            
-    def track_bit_s-r50x1(self, model, lib, inter_list, intra_list, batch_size):
+    def track_bit_s_r50x1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
         sys.path.append('/root/asv-test')
         import tensorflow as tf
@@ -917,8 +917,8 @@ class TensorflowImageClassification:
         inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)
         return inference
 
-    track_bit_s-r50x1.params = (["bit_s-r50x1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
-    track_bit_s-r50x1.unit = "Inference Time"
+    track_bit_s_r50x1.params = (["bit_s-r50x1"], ["tp", "eigen"], [16], [16], [1, 16, 32])
+    track_bit_s_r50x1.unit = "Inference Time"
            
     def track_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
