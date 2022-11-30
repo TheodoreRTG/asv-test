@@ -21,8 +21,1526 @@
         "unit": "qps",
         "version": "38e208d190fe48ddddbb7b8f88310321d015d7af5c7c68d835f0653fa346979e"
     },
+    "imagebench.TensorflowImageClassification.track_accuracy_bit_s_r50x1": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_bit_s_r50x1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_bit_s_r50x1",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'bit_s-r50x1'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "8a976dc03c084dded0f7fa2c9289c8ce352c5973d36a9ff4d2b75adf09b9aeb3"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b0": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b0",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b0'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "e6c33fb91d09d644e926935ebdd159e5b24b000780701a9f36769335d0b19633"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b1": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b1",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b1'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "1e9dd6a5bc37db0608cc5e194186c87983c9a5ca93ba3fff0bc121feed37045a"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b2": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b2",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b2'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "9e13e39687765ea1eedae094a19d406a77673ac242bc898a322c375423154ba0"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b3": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b3",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b3'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "548ca3b9acf1af08bcf86c674eac66d364d9aa88f34dc0e71743dd2f5e6d3b88"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b4": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b4(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b4",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b4'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "e8a2de5bb7d10772759476587cdb61f358d9b8ef5d278049873a5c64cdab1ac7"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b5": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b5(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b5",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b5'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "bf2a9f2e405b326d48e877f2203537f7c3b503a4f41517c366a3c130fbbd47d3"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b6": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b6(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b6",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b6'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "6f6f8b7d1b6ca0601d091704909cbde450b5d5acd94eccb654ce99aec9124d25"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b7": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnet_b7(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnet_b7",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnet_b7'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "cd06e668874f83683fb50c2278a0ba7a2581eda8e6f4f4c6df073c2d1356ee21"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b0": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b0(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b0",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b0'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "dfe694fea7ec8abcea2bf33672c58d1f7ee6a74f30cc5860cc3cb93c9c575d2b"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b0_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b0_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b0_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b0-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "25225f3d97dd1e51eef349d6fd62081afbb923057a17047d464fbea8779f984b"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b1": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b1",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b1'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "1734c855f7db052c0fab506242e6ed17baef3676014ec50b07ca7a5ff9452118"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b1_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b1_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b1_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b1-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "6989ea3128e78c2ab5a9a40cb43fc18ea3a53c7188a538301da4e06810e318c5"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b2": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b2",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b2'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "f984afc093cf595176fa2946816515f962250a0903f52f62dc36ac6a9ea333d9"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b2_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b2_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b2_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b2-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "7e04a034a3175a84b571bfc48a67604609fecd4f4af7462642768cada9557c42"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b3": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b3",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b3'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "6f4aa13ad9f87917c56c58d095a87363862084132fc68e3df64f10e15ea0967f"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b3_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_b3_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_b3_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-b3-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "88baf6c758040c42e35289fa8a98b94f0ca6d210588168895f23837bd06da1eb"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_l": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_l(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_l",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2_l'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "ca82ae7cf43c0d178b8c7fe00ee1158cdbf1342f0479d7023b34ba8d6f315146"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_l_21k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_l_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_l_21k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-l-21k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "af9787b533d1a434e5dddcaf56f3bbc839905e4ac512bbf215cfc113fccbf20a"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_l_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_l_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_l_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-l-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "236bb5bf1cfb40c8c6426cc9da02bc85cfed79798354a48dc1392c662118aba1"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_m": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_m(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_m",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-m'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "77efc838fcf3715636db6021acfb3e9d0cdde9d7a10718f6a1c8254bf52a86de"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_m_21k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_m_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_m_21k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-m-21k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "98324302d758c97bbc35abe72e43840643469092f62738f504633c79b811e3f9"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_m_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_m_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_m_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-m-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "a79953f447de4172dc052f8bb7b4a038d5be89ee6f196b02dfdc5338850b2ab3"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_s": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_s(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_s",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-s'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "bfe58419e8f2ca2ef268a8a02aab0d51eb503192e97f4f925968d6eaf3137faf"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_s_21k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_s_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_s_21k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-s-21k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "a0e64267ba2da54eccd47688ce22b1c2a6b4ee75856bb2e047cd444ebff37075"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_s_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_s_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_s_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-s-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "2991982bfe6ed2636bf0ff3f61cc84b18a603cfe7b8baf41a5daa8a79fc0c615"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_xl_21k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_xl_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_xl_21k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-xl-21k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "648ef748bbeea56d266a09186a2f588a4c5f2a8d56c5ff438e953bd1440abb7b"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_xl_21k_ft1k": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_efficientnetv2_xl_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_efficientnetv2_xl_21k_ft1k",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'efficientnetv2-xl-21k-ft1k'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "5eb445b797726073b5c7c3122c6a7c9c8322f7bfe940211dab2fb3ac0d62d7bc"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_inception_resnet_v2": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_inception_resnet_v2",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'inception_resnet_v2'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "62622d42fd9874dc2d688b26a28ebf18e4cf2efd72ef8fede76319551d314525"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_inception_v3": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_inception_v3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_inception_v3",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'inception_v3'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "2d4080d4718246546fef99600fca8f85767a98dd28691deb9f4516284c2cf2ac"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v2_100_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v2_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v2_100_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v2_100_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "3d6632e0e6312c1b80b7ff88efae3c6ad9b5a40aceb282c674c0b3748a0abe19"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v2_130_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v2_130_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v2_130_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v2_130_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "87988ba3df59514ab080a396ef444890bd5101b347e41acdc0cd9c935b1495ab"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v2_140_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v2_140_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v2_140_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v2_140_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "b8d0080045b85ff9f85a2c1b6800016e209219399e72396dcac2d77f53a6a204"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_large_075_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v3_large_075_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_large_075_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v3_large_075_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "52cd60fcc296467d7530a13cd640e38f2e19787087e5bea29d983f993174b968"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_large_100_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v3_large_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_large_100_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v3_large_100_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "cd22c5003ece66a7a1fc208b0f1f001e0671267cc5f6190293b4549a38a5d4f3"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_small_075_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v3_small_075_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_small_075_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v3_small_075_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "3143981341c68d33b9f6dffe42b4e0848400a45dce6e287be1a89b54d4c9f1b8"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_small_100_224": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_mobilenet_v3_small_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_mobilenet_v3_small_100_224",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'mobilenet_v3_small_100_224'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "604f2fb5d61ebf050156189e14564ea46192dc8d4295695e6cd636376bd8859b"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_nasnet_large": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_nasnet_large(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_nasnet_large",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'nasnet_large'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "81b34cfeb7425174dfdc66220e50d9bd648f3e5deb82590c1b9b7b48e3b40891"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_nasnet_mobile": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_nasnet_mobile(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_nasnet_mobile",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'nasnet_mobile'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "a818f02fd928fa471331066a37596ef0bdb0b459cf708d5b8ae7d04d4e549930"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_pnasnet_large": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_pnasnet_large(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_pnasnet_large",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'pnasnet_large'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "fa5ca122141d4d13ddfaed69b75da9b636b6767179b8246a75513c266ed5d28f"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_resnet_v1_101": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_resnet_v1_101(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_resnet_v1_101",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'resnet_v1_101'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "6c1bfa157906eb1cfd50b6171b3f7eeebc0321f79b85d26fe4a916bae94af2e4"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_resnet_v1_152": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_resnet_v1_152(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_resnet_v1_152",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'resnet_v1_152'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "b7f8259821313a492dbca007ec28268f98cebf9e4d7d981f64bfcf1c59443d2c"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_resnet_v1_50": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_resnet_v1_50(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_resnet_v1_50",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'resnet_v1_50'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "0376feaeae04f8a711b83021fbfe897167f97c67ed408c135918deafb6380726"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_resnet_v2_101": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_resnet_v2_101(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_resnet_v2_101",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'resnet_v2_101'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "887b1fd89f80519c6effe3a1726f9451990713dd08ffbae207ac037f411c7b54"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_resnet_v2_152": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_resnet_v2_152(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_resnet_v2_152",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'resnet_v2_152'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "139dffbdcdac4605e5d1259a29f565c20c2ec5ef07e39f51b27863ac8a436e3a"
+    },
+    "imagebench.TensorflowImageClassification.track_accuracy_resnet_v2_50": {
+        "code": "class TensorflowImageClassification:\n    def track_accuracy_resnet_v2_50(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        acc = run_image_bench_accuracy(self, model, lib, inter_list, intra_list, batch_size)\n        return acc",
+        "name": "imagebench.TensorflowImageClassification.track_accuracy_resnet_v2_50",
+        "param_names": [
+            "param1",
+            "param2",
+            "param3",
+            "param4",
+            "param5"
+        ],
+        "params": [
+            [
+                "'resnet_v2_50'"
+            ],
+            [
+                "'tp'",
+                "'eigen'"
+            ],
+            [
+                "16"
+            ],
+            [
+                "16"
+            ],
+            [
+                "1"
+            ]
+        ],
+        "timeout": 1800,
+        "type": "track",
+        "unit": "Accuracy",
+        "version": "adf0ae203310dbedfcdff56c77ddeecb8f077a553e1987066cec8ebff94bfdfc"
+    },
     "imagebench.TensorflowImageClassification.track_bit_s_r50x1": {
-        "code": "class TensorflowImageClassification:\n    def track_bit_s_r50x1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_bit_s_r50x1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_bit_s_r50x1",
         "param_names": [
             "param1",
@@ -54,10 +1572,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "51085a43e95aa80b619dc6a7dc3a905dcd699763f9f96625028bdcd928cfd873"
+        "version": "6b59a4bb4b7c4a40ca67f39d7378bd2bbdda4e60eb043543e1f8659aaaa2dc46"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b0": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n    \n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b0",
         "param_names": [
             "param1",
@@ -89,10 +1607,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "299a7c8d4e7783c8b30ecd71195135399d2cdcb6fe0499c9e136c5342c809eb8"
+        "version": "234ca5cd5ee2bb873e8a860a4436e27c36620c115118a4bdbcd73af1a02ff2cb"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b1": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b1",
         "param_names": [
             "param1",
@@ -124,10 +1642,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "a3631a083ef7e4794175dc065c3f620d43aca3be4f6ac4535b80833540ee3cb4"
+        "version": "95bdb31bbd6f464363b7d4032df688b9080c533addf097cbf94fb9804442c10f"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b2": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n    \n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b2",
         "param_names": [
             "param1",
@@ -159,10 +1677,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "47a6f59447b8f69bce5990e128a4df54fa7322fa7542158003c609ba18f7d20f"
+        "version": "44550a9b2554fd3902e9b687491350015ec14fafa912684305cd937112d13107"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b3": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b3",
         "param_names": [
             "param1",
@@ -194,10 +1712,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "43dbfa4944db72a0da87bc0c3c61d795f4fca025ffe8f4a0a40ad4343c1a4b88"
+        "version": "d3a1823839ed117f63611d9226a8f9aa4c688c082ede63842be33c0f317e71e5"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b4": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b4(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b4(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b4",
         "param_names": [
             "param1",
@@ -229,10 +1747,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "688ec7e63a028f270beb60fb5caca953c0a1e445179db7ca1403e7b6b68a3f82"
+        "version": "74b639adc3bc911619a4ed942bfcb571cdc1b2854655de25295fc3b5665540d8"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b5": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b5(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b5(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b5",
         "param_names": [
             "param1",
@@ -264,10 +1782,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "ef9b1045dd65f7e39fb84d8e741e07c1f9c23fc10917e8386b93a6762d63b9bb"
+        "version": "f2969d5ef7a8fa9596fe73cf7ea3235ec764958d150832b99e7867b046d8f891"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b6": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b6(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b6(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b6",
         "param_names": [
             "param1",
@@ -299,10 +1817,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "9e9a56a81c3c3abadedd982a933a7dceb1cc4f5ae3bb6c0d51b202ac2ec349b4"
+        "version": "d99181005487602fe514500df92ba0d7314e3addce6464597f1f22d925d93d18"
     },
     "imagebench.TensorflowImageClassification.track_efficientnet_b7": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b7(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnet_b7(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnet_b7",
         "param_names": [
             "param1",
@@ -334,10 +1852,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "9384dcbf6c079e2d0c838f3e141917422f550324dfd435ebf9a32fed19a32769"
+        "version": "4732f770d154bcbd2fb62d389e0a3fc3ef411d2e28a58aaa5e024846579dece7"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b0": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b0(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b0(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b0",
         "param_names": [
             "param1",
@@ -369,10 +1887,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "0fc7cc5d913b3ee8ec258e56c4462517eb884a61636123435566abc9c62807cd"
+        "version": "516b12dcdf17ee0d742e9f17a09f0e1b9a86375793c760f138b49bb5c28b7c0b"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b0_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b0_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b0_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b0_21k",
         "param_names": [
             "param1",
@@ -404,10 +1922,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "bd3614ca49daae2b58309a39ec2dfee2719bc6871964583c7c1fa53eb3e39575"
+        "version": "b4c7a27248373fed7e4b2c48af9e5cae4d9afd1167805d603bc898600c312e55"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b0_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b0_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b0_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b0_21k_ft1k",
         "param_names": [
             "param1",
@@ -439,10 +1957,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "a120d65cddb43b95f7a27cc08f2a2cf7996387eef123faad75ce485e46746e7a"
+        "version": "6b7b0cdf300b6b81ebd68922d548ed74c97279eef9ab327694bbd622d14b71f4"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b1": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b1(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b1",
         "param_names": [
             "param1",
@@ -474,10 +1992,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "cfb73c889914b3d4a89bf48b30906533db5a29d6f1a8a0458caea10934f03a61"
+        "version": "4d6837dd8997c0c376ac5cb1128d459576378c1eb577bbb0b32f9ef6f4a6e827"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b1_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b1_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b1_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b1_21k",
         "param_names": [
             "param1",
@@ -509,10 +2027,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "b14002332e9e66b4a95415486df5414898e0ad754dd7db002eadefab9c2d6076"
+        "version": "a495895deb66fa7d620d2b4e6bde20b9f64f7e7ca0c907bab86176d3adcdaeb4"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b1_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b1_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b1_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b1_21k_ft1k",
         "param_names": [
             "param1",
@@ -544,10 +2062,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "2baa0a35c40b951399950ad652295d5b4fad4e0869ac4d693c94ff6d018de824"
+        "version": "0d136bc42f3a41d99eccc2a4f5e718c6e35b7067c9f6eca961089fb6394ee65c"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b2": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b2",
         "param_names": [
             "param1",
@@ -579,10 +2097,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "13a40f07a33d42c01752bdb8ab47e58f22777ea6d51123d161c6552a6db18a1f"
+        "version": "47ea3de6d64b19ad6d1ab5203e76d74667e578dcdf8877c81867fd0e361afca9"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b2_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b2_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b2_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b2_21k",
         "param_names": [
             "param1",
@@ -614,10 +2132,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "04640ce655a7547dfbd71f0df0c4b491beccb4e9acb662311f9e07bbd0a2fbbf"
+        "version": "16f7593029f337667edd49451cfe0f055cf87c6ce419d838512bd333654d0996"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b2_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b2_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b2_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b2_21k_ft1k",
         "param_names": [
             "param1",
@@ -649,10 +2167,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "68a1701c9870780034ddc31d206f15d182e07d44e6774f1210de6dab1da2ba53"
+        "version": "ef1a5ec385a03337c2b1c7baff75e61c2f85febec899943a522c3906f3feab84"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b3": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n    \n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b3",
         "param_names": [
             "param1",
@@ -684,10 +2202,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "4ec086472eddac11bdf9946e10dec4be971c64cf51c92a450473bd82ffc47df2"
+        "version": "657bb9ee8ee8d95af471400ebb0ec6e6f438033ba9ff26a08a340c2acaae4cb9"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b3_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b3_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b3_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b3_21k",
         "param_names": [
             "param1",
@@ -719,10 +2237,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "36a5fe4f78a550e505dadabc3e4ef6ef81f56013320f1aa9c4536f65f5dbf27e"
+        "version": "825dca0318d0c8bb5cf2a7b7550ce14e4e1601b27fdbb1056bc08d504f393541"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_b3_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b3_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_b3_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_b3_21k_ft1k",
         "param_names": [
             "param1",
@@ -754,10 +2272,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "900985149c67a0a645b03e4aa4d722aacf9abe0333d2f6eec005b001c1a82700"
+        "version": "ec16e7000af59a056d01a35a6481ba22f991a98e301ed88952361210f30cb432"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_l": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_l(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_l(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_l",
         "param_names": [
             "param1",
@@ -768,7 +2286,7 @@
         ],
         "params": [
             [
-                "'efficientnetv2-l'"
+                "'efficientnetv2_l'"
             ],
             [
                 "'tp'",
@@ -789,10 +2307,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "6287cebd4b97cb4dc10ed56cb27d879cc35f27a1ffdca10be148097fa2057c37"
+        "version": "ec426e87c527a95dd3e4e7355b370bdd87af47c4aa1666afccc9bfbb98a0f009"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_l_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_l_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_l_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_l_21k",
         "param_names": [
             "param1",
@@ -824,10 +2342,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "e10185a586508c1e933a41ab04add2da57c0cc30edf975cf9733809f638911c7"
+        "version": "be1c4a3155e1be8c91225459a95847ee55470cc4658e9b11833a834b32d29ad8"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_l_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_l_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_l_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_l_21k_ft1k",
         "param_names": [
             "param1",
@@ -859,10 +2377,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "11c3a6f3b41e98d9d15dbde2ad8ced18320c2b70eb755d3cc7bd242fc2c5dd2c"
+        "version": "48cc7a40d2b0c2ba9b2c8f1cab7ea43145751c0fc1b027293e0612724007c1b3"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_m": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_m(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_m(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_m",
         "param_names": [
             "param1",
@@ -894,10 +2412,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "55700b31b18780b9d8324c166c8501942e3697048a94fbad63d42198c36a76a4"
+        "version": "da81a7cc8eb6d956147129462c557a87e596bb715c611837072e96c54d8f14c7"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_m_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_m_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_m_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_m_21k",
         "param_names": [
             "param1",
@@ -929,10 +2447,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "bba46d1bf4e5fde491fec2a036297d68b970cc88c9a79a2ed76e4c267a2eb699"
+        "version": "8686adaf8701d45b0412a26ecbd249d42bcd69a20cd0ab864e682d05bdc65c10"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_m_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_m_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_m_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_m_21k_ft1k",
         "param_names": [
             "param1",
@@ -964,10 +2482,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "3f096888badc445ecc2435a3d3e96b27c88b5d527cfc522061c090a2b432301e"
+        "version": "01274ccc4bab838a2e4a065c668f80bc487ab92448335818e745158066761b7c"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_s": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_s(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_s(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_s",
         "param_names": [
             "param1",
@@ -999,10 +2517,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "bbd0c3ece27027a2a806a3f9086732c0789f13d4cb36dba34a6e9083e04c7b2b"
+        "version": "1e8708070e2eb5a2f0b574fca6e1b066b96d039b37cde85b95e65811a0e7f816"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_s_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_s_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_s_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_s_21k",
         "param_names": [
             "param1",
@@ -1034,10 +2552,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "ce9b563076261228cb3f0237fc1d6708e63438013cb4a06d517d183f46f30b4f"
+        "version": "de4255a2f37b4fddec28a3563afcb34d97197b1feeddfb219a4ab0c400356c02"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_s_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_s_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_s_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_s_21k_ft1k",
         "param_names": [
             "param1",
@@ -1069,10 +2587,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "68b1ebb6916e484186ab0be5763ac0ea46a0deac34f89cc2a79f411c4d3916e2"
+        "version": "bb40c3c299588b159060a964ef481a8cff42ba7e1deeec4deb5c581ff142b997"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_xl_21k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_xl_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_xl_21k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_xl_21k",
         "param_names": [
             "param1",
@@ -1104,10 +2622,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "724d271a6327c2b06fede9837a9f76c9930c745be0d00b7feacd9cbc000e6bb6"
+        "version": "2eb9d9950aaa8dabc503b94cac8955f567f912d8d914be5ec5c40f225b89df03"
     },
     "imagebench.TensorflowImageClassification.track_efficientnetv2_xl_21k_ft1k": {
-        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_xl_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_efficientnetv2_xl_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_efficientnetv2_xl_21k_ft1k",
         "param_names": [
             "param1",
@@ -1139,10 +2657,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "40b1fcd37f4fc8f1a9ffffd668170816d5c601368e3a6e6832fffa29100f01ad"
+        "version": "a41882befe72a7b82f954d7bafbe766fa307cab516540fea63f4e2c73e261cea"
     },
     "imagebench.TensorflowImageClassification.track_inception_resnet_v2": {
-        "code": "class TensorflowImageClassification:\n    def track_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_inception_resnet_v2",
         "param_names": [
             "param1",
@@ -1174,10 +2692,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "a7fd1dc394385eac0ffa842f79c03681553f12d931c4785d045282b61943f091"
+        "version": "2d9b15ac64730711c472e467f24f15f75fd6cf73cd24f084b7150394ea2f3c13"
     },
     "imagebench.TensorflowImageClassification.track_inception_v3": {
-        "code": "class TensorflowImageClassification:\n    def track_inception_v3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_inception_v3(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_inception_v3",
         "param_names": [
             "param1",
@@ -1209,10 +2727,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "918041344779944820e513a3ec8f4d2cf727c9bbafc3a02680d7d1adbf4dfbbb"
+        "version": "2d1e72310b55d2d9d15817ca980278afeae0d9fc146ceec62383bdd7b51c3537"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v2_100_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v2_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v2_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v2_100_224",
         "param_names": [
             "param1",
@@ -1244,10 +2762,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "0b3fe70460497e119c28ea55a1567eacd5cbf98ef269396b5946c0587b38a784"
+        "version": "1e40445d6fcdd24e9f6716dbcf6ace066444f52d5d28240663b946fb758991d2"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v2_130_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v2_130_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v2_130_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v2_130_224",
         "param_names": [
             "param1",
@@ -1279,10 +2797,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "5fa4e6e4e23e1e33458892dabe4b4b79d8e9e964cdfcaf7e6d5130c85b7fb195"
+        "version": "cc30a99752a3e53aa7bf7f8be89a1a92580aa55d4641e120a935442b9ac2c501"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v2_140_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v2_140_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v2_140_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v2_140_224",
         "param_names": [
             "param1",
@@ -1314,10 +2832,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "090e0d8f78f9b590f98a70434c5d92b32c3b622121cc4f3f1ac1d756fb88d3df"
+        "version": "94025585a25cb16c1e4f5d7eb8235d79dcaff48230f6dee5cc0d5c59b8394ecd"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v3_large_075_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_large_075_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_large_075_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v3_large_075_224",
         "param_names": [
             "param1",
@@ -1349,10 +2867,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "63e6f70f67ddccdeb81189c81e877e33959010296f3661f4dbe62cb49d2179ee"
+        "version": "7b91056c983d3bc67e9e1c6ec21373ffbc3b68913f4c017ede2710cdf840a2bc"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v3_large_100_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_large_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_large_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v3_large_100_224",
         "param_names": [
             "param1",
@@ -1384,10 +2902,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "7498c0292f9b60e9404b9a0f4dcf62b1701d4866e9b8fa727511807e75172475"
+        "version": "ce29fcfdad1b4f34dd37d45a181748eb9bba7d6b824ca019d188f58f9f3af194"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v3_small_075_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_small_075_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_small_075_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v3_small_075_224",
         "param_names": [
             "param1",
@@ -1419,10 +2937,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "7f4df009ec6f2e51e23fd43537cc5aa7e7cc3a68391646c97b7478c8a2380ab8"
+        "version": "49aaa4c0baef60f2b786219c68504f60a3599b36c1ac9976f6c8b958d800de7a"
     },
     "imagebench.TensorflowImageClassification.track_mobilenet_v3_small_100_224": {
-        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_small_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_mobilenet_v3_small_100_224(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_mobilenet_v3_small_100_224",
         "param_names": [
             "param1",
@@ -1454,10 +2972,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "ce75554b7c412d601241f291ad6ac98bf622090f37f04af306fbeed1708dbfd3"
+        "version": "eca113361490fae00811b39e4300f2e3926615fafa02bf2bf338355ea4c578ec"
     },
     "imagebench.TensorflowImageClassification.track_nasnet_large": {
-        "code": "class TensorflowImageClassification:\n    def track_nasnet_large(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_nasnet_large(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_nasnet_large",
         "param_names": [
             "param1",
@@ -1489,10 +3007,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "05a39f099feec44f25e99491d373097daf72a334c2f60689b499e36b87c2097f"
+        "version": "5c598efe09e09295c9362aca5415629601a1e7b37347986e0ec1084f883b54ff"
     },
     "imagebench.TensorflowImageClassification.track_nasnet_mobile": {
-        "code": "class TensorflowImageClassification:\n    def track_nasnet_mobile(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_nasnet_mobile(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n    \n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_nasnet_mobile",
         "param_names": [
             "param1",
@@ -1524,10 +3042,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "063a6943fe037e6a24bcad25217650e82a10ca6776cec9ab5127c5a5dc523b6c"
+        "version": "adc55b942c928c8d3e87e54763e56aae1445a81f54a1a99b77507623b57c4976"
     },
     "imagebench.TensorflowImageClassification.track_pnasnet_large": {
-        "code": "class TensorflowImageClassification:\n    def track_pnasnet_large(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_pnasnet_large(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_pnasnet_large",
         "param_names": [
             "param1",
@@ -1559,10 +3077,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "74d932c570cb2b5b5350d2eddd0c669bf78daaef8f80a6c2a24bf7ec754087a1"
+        "version": "acc627d4da1831112be32b7fb7a8bd2f743a0b030c948d4a15cb63d2c1f353f9"
     },
     "imagebench.TensorflowImageClassification.track_resnet_v1_101": {
-        "code": "class TensorflowImageClassification:\n    def track_resnet_v1_101(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_resnet_v1_101(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_resnet_v1_101",
         "param_names": [
             "param1",
@@ -1594,10 +3112,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "4326610ce4c7dbcddc00b9e4d88beb6f862cc29b35d969c3e8f4ac08f0c5b179"
+        "version": "eead155280cd44ed659769142541701c9cbd1491195df0b808fcac8f38700f75"
     },
     "imagebench.TensorflowImageClassification.track_resnet_v1_152": {
-        "code": "class TensorflowImageClassification:\n    def track_resnet_v1_152(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_resnet_v1_152(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_resnet_v1_152",
         "param_names": [
             "param1",
@@ -1629,10 +3147,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "052ee753f9fe7520194e98ef90e13996a66b9c0a897f39835435de768b97f6bb"
+        "version": "2141d40bf6eec77e766c766eb127bcc8bf7ae025e94a821775adaedea3f50373"
     },
     "imagebench.TensorflowImageClassification.track_resnet_v1_50": {
-        "code": "class TensorflowImageClassification:\n    def track_resnet_v1_50(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_resnet_v1_50(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_resnet_v1_50",
         "param_names": [
             "param1",
@@ -1664,10 +3182,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "d3c1068e02b26fd68287bdee66251f03c269cb06a8545e77170256d02bf016e5"
+        "version": "7b807a8b52dfd4d145fa8ed9725532cdb3fff501b6645caebf54fab082c260c6"
     },
     "imagebench.TensorflowImageClassification.track_resnet_v2_101": {
-        "code": "class TensorflowImageClassification:\n    def track_resnet_v2_101(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_resnet_v2_101(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_resnet_v2_101",
         "param_names": [
             "param1",
@@ -1699,10 +3217,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "dfbb7a52fa0a175750b20683b63bd103211d13772f62a25dfe9c9b3945ddc689"
+        "version": "771ebb88f1faec8800dabbb0a19d2d952ce7e9274bb4382ee9fea03403a2e928"
     },
     "imagebench.TensorflowImageClassification.track_resnet_v2_152": {
-        "code": "class TensorflowImageClassification:\n    def track_resnet_v2_152(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_resnet_v2_152(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_resnet_v2_152",
         "param_names": [
             "param1",
@@ -1734,10 +3252,10 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "e80058f51931c38d03e9c00c8b66b96bf5eea4c6e0edd8f5f7754aca7da65503"
+        "version": "205311dcb9705eb5f83577c9b9d370e98caf7113f8a94f2b2f35ba0aaf5419c1"
     },
     "imagebench.TensorflowImageClassification.track_resnet_v2_50": {
-        "code": "class TensorflowImageClassification:\n    def track_resnet_v2_50(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
+        "code": "class TensorflowImageClassification:\n    def track_resnet_v2_50(self, model, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n        import tensorflow as tf\n        from functs import run_image_bench, run_image_bench_accuracy\n        import os\n    \n        import time\n        import csv\n        ##########\n        import tensorflow as tf\n        import tensorflow_hub as hub\n    \n        import requests\n        from PIL import Image\n        from io import BytesIO\n    \n        import matplotlib.pyplot as plt\n        import numpy as np\n        import sys\n    \n        inference = run_image_bench(self, model, lib, inter_list, intra_list, batch_size)\n        return inference",
         "name": "imagebench.TensorflowImageClassification.track_resnet_v2_50",
         "param_names": [
             "param1",
@@ -1769,7 +3287,7 @@
         "timeout": 1800,
         "type": "track",
         "unit": "Inference Time",
-        "version": "0e7304a26ac625ebcd95803c0ff7e2ce47676d4130ac45c53adb3286fd102ef9"
+        "version": "b83d3e755becc80b51bb8fa352eb0acdf5bbe1028d6b7571037037875e2c0796"
     },
     "object_detection.TensorflowObjectDetection.track_centernet_hourglass104_1024x1024": {
         "code": "class TensorflowObjectDetection:\n    def track_centernet_hourglass104_1024x1024(self, lib, inter_list, intra_list, batch_size):\n        import sys\n        sys.path.append('/root/asv-test')\n    \n        from functs import load_image_into_numpy_array, run_object_detect_bench\n        import os\n        import pathlib\n    \n        import matplotlib\n        import matplotlib.pyplot as plt\n    \n        import io\n        import scipy.misc\n        import numpy as np\n        from six import BytesIO\n        from PIL import Image, ImageDraw, ImageFont\n        from six.moves.urllib.request import urlopen\n    \n        import tensorflow as tf\n        import tensorflow_hub as hub\n        ##########################\n        import time\n        import csv\n        import sys\n    \n        inference = run_object_detect_bench(self, \"CenterNet HourGlass104 1024x1024\", \"tp\", inter_list, intra_list, batch_size)\n        return inference",
