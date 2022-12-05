@@ -1410,7 +1410,7 @@ class TensorflowImageClassification:
     track_mobilenet_v3_large_075_224.param_names = (["Model"], ["Library"], ["inter threads"], ["intra threads"], ["Batch Size"])
 
     
- class TensorflowAccuracyImageClassification:
+class TensorflowAccuracyImageClassification:
     
     def track_accuracy_inception_v3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
