@@ -1,0 +1,9 @@
+{
+    "arch": "aarch64",
+    "cpu": "",
+    "machine": "d05bench",
+    "num_cpu": "64",
+    "os": "Linux 6.1.0-11-arm64",
+    "ram": "131380752",
+    "version": 1
+}
