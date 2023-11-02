@@ -10,7 +10,7 @@
     
      "install_command": [
         "pip install --no-binary pycocotools pycocotools --no-cache",
-        "pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ numpy==1.19.5 --no-cache",
+        "pip install --extra-index-url https://snapshots.linaro.org/ldcg/python-cache/ numpy==1.23.5 --no-cache",
         "in-dir={conf_dir}/inference/loadgen/dist pip install mlperf_loadgen-1.1-cp39-cp39-linux_aarch64.whl",
 	"pip install scipy --no-cache",
         "in-dir={conf_dir}/inference/vision/classification_and_detection/dist pip install mlperf_inference-0.1.0-py3-none-any.whl",
