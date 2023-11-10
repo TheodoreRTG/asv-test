@@ -3,9 +3,10 @@ class TensorflowImageClassification:
     
     def track_inception_v3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
-        from functs import run_image_bench, run_image_bench_accuracy
+#        from functs import run_image_bench, run_image_bench_accuracy
+        from . import functs
         import os
 
         import time
@@ -31,7 +32,7 @@ class TensorflowImageClassification:
     
     def track_nasnet_mobile(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -60,7 +61,7 @@ class TensorflowImageClassification:
 
     def track_efficientnetv2_s(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -88,7 +89,7 @@ class TensorflowImageClassification:
 
     def track_efficientnetv2_m(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -116,7 +117,7 @@ class TensorflowImageClassification:
 
     def track_efficientnetv2_l(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -144,7 +145,7 @@ class TensorflowImageClassification:
      
     def track_efficientnetv2_s_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -172,7 +173,7 @@ class TensorflowImageClassification:
 
     def track_efficientnetv2_m_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -200,7 +201,7 @@ class TensorflowImageClassification:
     
     def track_efficientnetv2_l_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -228,7 +229,7 @@ class TensorflowImageClassification:
     
     def track_efficientnetv2_xl_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -256,7 +257,7 @@ class TensorflowImageClassification:
        
     def track_efficientnetv2_b0_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -284,7 +285,7 @@ class TensorflowImageClassification:
 
     def track_efficientnetv2_b1_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -312,7 +313,7 @@ class TensorflowImageClassification:
      
     def track_efficientnetv2_b2_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -341,7 +342,7 @@ class TensorflowImageClassification:
   
     def track_efficientnetv2_b3_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -369,7 +370,7 @@ class TensorflowImageClassification:
    
     def track_efficientnetv2_s_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -397,7 +398,7 @@ class TensorflowImageClassification:
     
     def track_efficientnetv2_m_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -426,7 +427,7 @@ class TensorflowImageClassification:
      
     def track_efficientnetv2_l_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -455,7 +456,7 @@ class TensorflowImageClassification:
   
     def track_efficientnetv2_xl_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -483,7 +484,7 @@ class TensorflowImageClassification:
    
     def track_efficientnetv2_b0_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -511,7 +512,7 @@ class TensorflowImageClassification:
   
     def track_efficientnetv2_b1_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -539,7 +540,7 @@ class TensorflowImageClassification:
     
     def track_efficientnetv2_b2_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -567,7 +568,7 @@ class TensorflowImageClassification:
     
     def track_efficientnetv2_b3_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -595,7 +596,7 @@ class TensorflowImageClassification:
           
     def track_efficientnetv2_b0(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -623,7 +624,7 @@ class TensorflowImageClassification:
    
     def track_efficientnetv2_b1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -651,7 +652,7 @@ class TensorflowImageClassification:
  
     def track_efficientnetv2_b2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -679,7 +680,7 @@ class TensorflowImageClassification:
    
     def track_efficientnetv2_b3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -708,7 +709,7 @@ class TensorflowImageClassification:
   
     def track_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -737,7 +738,7 @@ class TensorflowImageClassification:
     
     def track_efficientnet_b1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -765,7 +766,7 @@ class TensorflowImageClassification:
     
     def track_efficientnet_b2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -794,7 +795,7 @@ class TensorflowImageClassification:
     
     def track_efficientnet_b3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -822,7 +823,7 @@ class TensorflowImageClassification:
     
     def track_efficientnet_b4(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -850,7 +851,7 @@ class TensorflowImageClassification:
 
     def track_efficientnet_b5(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -878,7 +879,7 @@ class TensorflowImageClassification:
      
     def track_efficientnet_b6(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -906,7 +907,7 @@ class TensorflowImageClassification:
     
     def track_efficientnet_b7(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -934,7 +935,7 @@ class TensorflowImageClassification:
         
     def track_bit_s_r50x1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -962,7 +963,7 @@ class TensorflowImageClassification:
     
     def track_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -990,7 +991,7 @@ class TensorflowImageClassification:
 
     def track_resnet_v1_50(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1018,7 +1019,7 @@ class TensorflowImageClassification:
 
     def track_resnet_v1_101(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1046,7 +1047,7 @@ class TensorflowImageClassification:
 
     def track_resnet_v1_152(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1074,7 +1075,7 @@ class TensorflowImageClassification:
         
     def track_resnet_v2_50(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1102,7 +1103,7 @@ class TensorflowImageClassification:
           
     def track_resnet_v2_101(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1130,7 +1131,7 @@ class TensorflowImageClassification:
       
     def track_resnet_v2_152(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1158,7 +1159,7 @@ class TensorflowImageClassification:
     
     def track_nasnet_large(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1186,7 +1187,7 @@ class TensorflowImageClassification:
 
     def track_pnasnet_large(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1214,7 +1215,7 @@ class TensorflowImageClassification:
      
     def track_mobilenet_v2_100_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1242,7 +1243,7 @@ class TensorflowImageClassification:
  
     def track_mobilenet_v2_130_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1270,7 +1271,7 @@ class TensorflowImageClassification:
      
     def track_mobilenet_v2_140_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1298,7 +1299,7 @@ class TensorflowImageClassification:
     
     def track_mobilenet_v3_small_100_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1326,7 +1327,7 @@ class TensorflowImageClassification:
     
     def track_mobilenet_v3_small_075_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1354,7 +1355,7 @@ class TensorflowImageClassification:
     
     def track_mobilenet_v3_large_100_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1383,7 +1384,7 @@ class TensorflowImageClassification:
            
     def track_mobilenet_v3_large_075_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1414,7 +1415,7 @@ class TensorflowAccuracyImageClassification:
     
     def track_accuracy_inception_v3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1443,7 +1444,7 @@ class TensorflowAccuracyImageClassification:
     
     def track_accuracy_nasnet_mobile(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1471,7 +1472,7 @@ class TensorflowAccuracyImageClassification:
     
     def track_accuracy_efficientnetv2_l(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1499,7 +1500,7 @@ class TensorflowAccuracyImageClassification:
      
     def track_accuracy_efficientnetv2_l_21k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1527,7 +1528,7 @@ class TensorflowAccuracyImageClassification:
     
     def track_accuracy_efficientnetv2_l_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1555,7 +1556,7 @@ class TensorflowAccuracyImageClassification:
     
     def track_accuracy_efficientnetv2_b0_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1583,7 +1584,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b1_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1611,7 +1612,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b2_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1640,7 +1641,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b3_21k_ft1k(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1669,7 +1670,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b0(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1698,7 +1699,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1726,7 +1727,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1754,7 +1755,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnetv2_b3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1782,7 +1783,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b0(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1810,7 +1811,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1838,7 +1839,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1866,7 +1867,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b3(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1894,7 +1895,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b4(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1922,7 +1923,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b5(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1949,7 +1950,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b6(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -1977,7 +1978,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_efficientnet_b7(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2005,7 +2006,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_bit_s_r50x1(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2033,7 +2034,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_inception_resnet_v2(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2061,7 +2062,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_resnet_v1_50(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2089,7 +2090,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_resnet_v1_101(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2117,7 +2118,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_resnet_v1_152(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2145,7 +2146,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_resnet_v2_50(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2173,7 +2174,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_resnet_v2_101(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2201,7 +2202,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_resnet_v2_152(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2229,7 +2230,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_nasnet_large(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2257,7 +2258,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_pnasnet_large(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2285,7 +2286,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_mobilenet_v2_100_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2313,7 +2314,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_mobilenet_v2_130_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2341,7 +2342,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_mobilenet_v2_140_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2369,7 +2370,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_mobilenet_v3_large_100_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
@@ -2397,7 +2398,7 @@ class TensorflowAccuracyImageClassification:
            
     def track_accuracy_mobilenet_v3_large_075_224(self, model, lib, inter_list, intra_list, batch_size):
         import sys
-        sys.path.append('/root/asv-test')
+        sys.path.append('/home/buildslave/workspace/asv-test')
         import tensorflow as tf
         from functs import run_image_bench, run_image_bench_accuracy
         import os
